@@ -52,11 +52,11 @@ export const Contact = (props) => {
       });
 
       if (response.data.status === 'success') {
-        setStatus("Email sent successfully");
+        setStatus("Thank you! Your message has been sent successfully. We will get back to you shortly.");
         clearState();
-      } else {
-        setStatus("Failed to send email");
-      }
+    } else {
+        setStatus("Oops! Something went wrong, and we couldn't send your message. Please try again later.");
+    }
     } catch (error) {
       setStatus("An error occurred. Please try again later.");
     } finally {
