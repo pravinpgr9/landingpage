@@ -1,184 +1,187 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Crafting Innovative & Tailored Digital Solutions",
+    "paragraph": "Transforming Ideas into Stunning Digital Experiences"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "We are a creative agency specializing in website design and development that captivates your audience, drives engagement, and delivers measurable results. From the initial concept to the final launch, we turn your vision into a digital reality with innovation and meticulous attention to detail.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Tailored design solutions that reflect your brand’s unique identity.",
+      "Responsive designs that ensure a seamless experience across all devices.",
+      "SEO-friendly development to help your website rank higher on search engines.",
+      "Ongoing support and maintenance to keep your website performing at its best."
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Experienced team dedicated to bringing your vision to life.",
+      "Use of the latest technologies and industry best practices.",
+      "Commitment to delivering projects on time and within budget.",
+      "Focus on building long-term partnerships with our clients."
     ]
   },
+    
   "Gallery": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "title": "E-Commerce Platform Redesign",
+      "largeImage": "https://picsum.photos/800/600?random=1",
+      "smallImage": "https://picsum.photos/400/300?random=1"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "title": "Corporate Website Development",
+      "largeImage": "https://picsum.photos/800/600?random=2",
+      "smallImage": "https://picsum.photos/400/300?random=2"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "title": "Creative Agency Portfolio",
+      "largeImage": "https://picsum.photos/800/600?random=3",
+      "smallImage": "https://picsum.photos/400/300?random=3"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "title": "SaaS Application Interface",
+      "largeImage": "https://picsum.photos/800/600?random=4",
+      "smallImage": "https://picsum.photos/400/300?random=4"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "title": "Restaurant Website Design",
+      "largeImage": "https://picsum.photos/800/600?random=5",
+      "smallImage": "https://picsum.photos/400/300?random=5"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "title": "Personal Blog Layout",
+      "largeImage": "https://picsum.photos/800/600?random=6",
+      "smallImage": "https://picsum.photos/400/300?random=6"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
+      "title": "Non-Profit Organization Site",
+      "largeImage": "https://picsum.photos/800/600?random=7",
+      "smallImage": "https://picsum.photos/400/300?random=7"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
+      "title": "Tech Startup Landing Page",
+      "largeImage": "https://picsum.photos/800/600?random=8",
+      "smallImage": "https://picsum.photos/400/300?random=8"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "title": "Event Management Portal",
+      "largeImage": "https://picsum.photos/800/600?random=9",
+      "smallImage": "https://picsum.photos/400/300?random=9"
     }
-  ],
+  ],    
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-code",
+      "name": "Custom Website Development",
+      "text": "We build robust, scalable websites tailored to your business needs, ensuring seamless performance across all devices."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-shopping-cart",
+      "name": "E-Commerce Solutions",
+      "text": "Our e-commerce platforms are designed to enhance user experience and drive sales, with easy-to-manage systems and secure transactions."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-cloud",
+      "name": "Cloud Integration",
+      "text": "Leverage the power of the cloud with our integration services, providing scalable and reliable solutions for your digital infrastructure."
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-globe",
+      "name": "Multilingual Websites",
+      "text": "Expand your reach with multilingual websites that cater to a global audience, ensuring accessibility and engagement across languages."
     },
     {
       "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "SEO & Digital Marketing",
+      "text": "Boost your online presence with our SEO and digital marketing services, designed to increase visibility and drive targeted traffic."
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-chart-line",
+      "name": "Analytics & Optimization",
+      "text": "Make data-driven decisions with our analytics services. We help you monitor, analyze, and optimize your website’s performance."
     }
-  ],
+  ],  
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "\"Working with [Your Agency Name] was a game-changer for our business. They transformed our outdated website into a modern, user-friendly platform. We’ve seen a significant increase in traffic and customer engagement.\"",
+      "name": "Rajesh Kumar"
     },
     {
       "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "\"The team at [Your Agency Name] truly understands our vision. They delivered a website that perfectly captures our brand’s essence and values. The process was seamless, and the results were outstanding.\"",
+      "name": "Anita Desai"
     },
     {
       "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "\"[Your Agency Name] exceeded our expectations in every way. Their attention to detail, creativity, and professionalism made the entire experience enjoyable. Our new website has received nothing but positive feedback.\"",
+      "name": "Vikram Sharma"
     },
     {
       "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "\"Choosing [Your Agency Name] was one of the best decisions we made for our company. They delivered a top-notch website on time and within budget. We highly recommend them!\"",
+      "name": "Priya Nair"
     },
     {
       "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "\"From start to finish, [Your Agency Name] provided exceptional service. Their expertise and dedication resulted in a website that not only looks great but also performs brilliantly.\"",
+      "name": "Amit Patel"
     },
     {
       "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "\"We couldn’t be happier with the website [Your Agency Name] created for us. It’s visually stunning, easy to navigate, and has already helped us attract new clients. Highly recommend!\"",
+      "name": "Meena Rao"
     }
   ],
+  
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "John Doe",
+      "name": "Pravin Pagare",
       "job": "Director"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "Mike Doe",
+      "name": "Krutika Pagare",
       "job": "Senior Designer"
     },
     {
       "img": "img/team/03.jpg",
-      "name": "Jane Doe",
+      "name": "Ankita Doe",
       "job": "Senior Designer"
     },
     {
       "img": "img/team/04.jpg",
-      "name": "Karen Doe",
+      "name": "Farhana Khan",
       "job": "Project Manager"
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "address": "Padmaja Heights SHivneri Colony, Kamathvada Cidco Nashik.",
+    "phone": "9503671828",
+    "email": "pravinpgr9@gmail.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-paint-brush",
+      "title": "Custom Design",
+      "text": "Experience bespoke designs crafted to reflect your brand’s unique identity and captivate your audience."
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-mobile",
+      "title": "Responsive Design",
+      "text": "Our designs are mobile-first, ensuring flawless performance and aesthetics on every device, from mobile to desktop."
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-lock",
+      "title": "Enhanced Security",
+      "text": "We prioritize top-tier security measures to protect your website from potential threats, ensuring peace of mind."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-tachometer",
+      "title": "Optimized Performance",
+      "text": "Enjoy lightning-fast load times and seamless navigation, designed to keep users engaged and coming back for more."
     }
   ]
+  
 }

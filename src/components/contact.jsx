@@ -1,36 +1,62 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import React from "react";
+import axios from "axios";
 
 const initialState = {
-  name: "",
+  firstName: "",
+  lastName: "",
   email: "",
+  phone: "",
+  country: "",
+  subject: "",
   message: "",
+  helpOptions: {
+    design: false,
+    development: false,
+    consulting: false,
+    other: false,
+  },
 };
+
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [state, setState] = useState(initialState);
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
+    const { name, value, type, checked } = e.target;
+    if (type === "checkbox") {
+      setState((prevState) => ({
+        ...prevState,
+        helpOptions: { ...prevState.helpOptions, [name]: checked },
+      }));
+    } else {
+      setState((prevState) => ({ ...prevState, [name]: value }));
+    }
   };
+
   const clearState = () => setState({ ...initialState });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+    
+    const helpOptionsArray = Object.entries(state.helpOptions)
+        .filter(([key, value]) => value)
+        .map(([key]) => key);
+
+    const response = await axios.post('http://localhost:3000/mailer/send', {
+        ...state,
+        helpOptions: helpOptionsArray,  // Ensure this is an array
+    });
+
+    if (response.data.status === 'success') {
+        setStatus("Email sent successfully");
+        clearState();
+    } else {
+        setStatus("Failed to send email");
+    }
+};
+
+
   return (
     <div>
       <div id="contact">
@@ -45,21 +71,36 @@ export const Contact = (props) => {
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
+                {/* Form Fields */}
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
-                        id="name"
-                        name="name"
+                        id="firstName"
+                        name="firstName"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="First Name"
                         required
                         onChange={handleChange}
                       />
-                      <p className="help-block text-danger"></p>
                     </div>
                   </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        className="form-control"
+                        placeholder="Last Name"
+                        required
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
@@ -71,9 +112,40 @@ export const Contact = (props) => {
                         required
                         onChange={handleChange}
                       />
-                      <p className="help-block text-danger"></p>
                     </div>
                   </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number"
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    className="form-control"
+                    placeholder="Country"
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    className="form-control"
+                    placeholder="Subject"
+                    onChange={handleChange}
+                  />
                 </div>
                 <div className="form-group">
                   <textarea
@@ -85,12 +157,58 @@ export const Contact = (props) => {
                     required
                     onChange={handleChange}
                   ></textarea>
-                  <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
+                <div className="form-group">
+                  <label>How can we help?</label>
+                  <div className="checkbox">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="design"
+                        checked={state.helpOptions.design}
+                        onChange={handleChange}
+                      />
+                      Website Design
+                    </label>
+                  </div>
+                  <div className="checkbox">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="development"
+                        checked={state.helpOptions.development}
+                        onChange={handleChange}
+                      />
+                      Website Development
+                    </label>
+                  </div>
+                  <div className="checkbox">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="consulting"
+                        checked={state.helpOptions.consulting}
+                        onChange={handleChange}
+                      />
+                      Consulting
+                    </label>
+                  </div>
+                  <div className="checkbox">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="other"
+                        checked={state.helpOptions.other}
+                        onChange={handleChange}
+                      />
+                      Other
+                    </label>
+                  </div>
+                </div>
                 <button type="submit" className="btn btn-custom btn-lg">
                   Send Message
                 </button>
+                {status && <p>{status}</p>}
               </form>
             </div>
           </div>
