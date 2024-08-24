@@ -43,7 +43,7 @@ export const Contact = (props) => {
         .filter(([key, value]) => value)
         .map(([key]) => key);
 
-    const response = await axios.post('http://localhost:3000/mailer/send', {
+    const response = await axios.post('https://usermanagement-omega.vercel.app/mailer/send', {
         ...state,
         helpOptions: helpOptionsArray,  // Ensure this is an array
     });
