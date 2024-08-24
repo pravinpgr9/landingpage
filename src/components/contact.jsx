@@ -21,6 +21,7 @@ const initialState = {
 export const Contact = (props) => {
   const [state, setState] = useState(initialState);
   const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false);  // New loading state
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -38,24 +39,30 @@ export const Contact = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+    setLoading(true);  // Start loading
+
     const helpOptionsArray = Object.entries(state.helpOptions)
         .filter(([key, value]) => value)
         .map(([key]) => key);
 
-    const response = await axios.post('https://usermanagement-omega.vercel.app/mailer/send', {
-        ...state,
-        helpOptions: helpOptionsArray,  // Ensure this is an array
-    });
+    try {
+      const response = await axios.post('https://usermanagement-omega.vercel.app/mailer/send', {
+          ...state,
+          helpOptions: helpOptionsArray,
+      });
 
-    if (response.data.status === 'success') {
+      if (response.data.status === 'success') {
         setStatus("Email sent successfully");
         clearState();
-    } else {
+      } else {
         setStatus("Failed to send email");
+      }
+    } catch (error) {
+      setStatus("An error occurred. Please try again later.");
+    } finally {
+      setLoading(false);  // Stop loading
     }
-};
-
+  };
 
   return (
     <div>
@@ -205,9 +212,15 @@ export const Contact = (props) => {
                     </label>
                   </div>
                 </div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
-                </button>
+                {loading ? (
+                  <button type="button" className="btn btn-custom btn-lg" disabled>
+                    Sending...
+                  </button>
+                ) : (
+                  <button type="submit" className="btn btn-custom btn-lg">
+                    Send Message
+                  </button>
+                )}
                 {status && <p>{status}</p>}
               </form>
             </div>
